@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="num">numero 1</label>
+        <input type="number" name="num1" id="num" max="100" min="0" required oninput="isoma.innerHTML = Number(num.value) + Number(num2.value)">
+    </div>
+    <div>
+        <label for="num2"> numero 2</label>
+        <input type="number" name="numm" id="num2" max="100" min="0" value="5" required oninput="isoma.innerHTML = Number(num.value) + Number(num2.value)">
+    </div>
+   <div>
+   </div>
+   <div>
+    <label for="isoma">soma:</label>
+    <output name="soma" id="isoma">0</output>
+
+   </div>
+   <div>
+    <label for="ranger">nota de satisfaçao</label>
+    <input type="range" name="rangee" id="ranger" required max="10" min="0" oninput="ranger1.innerHTML = Number(ranger.value)">
+    <output id="ranger1">5</output>
+
+   </div>
+   <div>
+    <label for="iano"> em que ano você nasceu?</label>
+    <input type="number" name="ano" id="iano" max="2023" min="1900" oninput="calcidade()">
+   </div>
+   <div>
+    <label for="iidade"> sua idade é</label>
+    <output id="idade1">0</output>
+   </div>
+   <script>
+    function calcidade() {
+        let atual = new Date().getFullYear()
+        idade1.innerHTML = Number(atual) - Number(iano.value)
+        
+    }
+   </script>
+  
+    
+</body>
+</html>
