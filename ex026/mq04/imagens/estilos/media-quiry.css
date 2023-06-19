@@ -1,6 +1,22 @@
 @charset "UTF-8";
 
 
-@media  screen and (min-width:600px) and (max-width:992px) {
+@media  screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../back-pc.jpg);
+    }
+    
+}
+@media  screen and (min-width:1200px) {
+    body{
+        background-image: url(../back-tv.jpg);
+    }
     
 }
