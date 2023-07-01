@@ -80,6 +80,7 @@ header > p{
 }
 header > h1{
     text-align: center;
+    font-weight: 700;
     padding: 30px;
     margin-bottom: 30px;
     font-size: 3em;
