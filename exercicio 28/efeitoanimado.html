@@ -8,17 +8,48 @@
         *{
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
 
         }
-        .button{
+        .botao{
+            text-align: center;
+            margin: 50vh;
+            
+        
+            
+        }
+
+        button{
+            padding: 20px 20px;
+            background-image: linear-gradient(45deg, #0000ff, #0087f8);
+            font-size: 1.5rem;
             border: none;
             border-radius: 10px;
             cursor: pointer;
         }
+        @keyframes anima{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.10);
+            }
+        }
+        button:hover{
+            animation-name: anima;
+            animation-duration: 0.6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            ani
+        }
+
     </style>
 </head>
 <body>
-     <div class="botao"></div>
-     <button>Enviar</button>
+     <div class="botao">
+        <button>Enviar</button>
+     </div>
+    
 </body>
 </html>
